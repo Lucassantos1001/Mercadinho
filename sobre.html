@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="images/png">
+
+    <title>Luquinha Games Academy| Pagamento</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav container">
+        <ul class="header-list-container list-container">
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="loja.html">Loja</a>
+          </li>
+          <li class="nav-item">
+            <a href="sobre.html">Pagamento</a>
+          </li>
+        </ul>
+      </nav>
+      <hr>
+      <h1 class="movie-title-large movie-title">Luquinha Games Academy</h1>
+    </header>
+
+    
+</head>
+<body>
+  <div id="confirmationModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Confirmação de Compra</h2>
+          <form id="confirmationForm">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="cpf">CPF:</label>
+              <input type="text" id="cpf" name="cpf" required>
+
+              <label for="address">Endereço:</label>
+              <input type="text" id="address" name="address" required>
+
+              <label for="payment">Forma de Pagamento:</label>
+              <select id="payment" name="payment" required>
+                  <option value="credit">Cartão de Crédito</option>
+                  <option value="debit">Cartão de Débito</option>
+                  <option value="paypal">PayPal</option>
+              </select>
+
+              <button id="Comprafinalizada" type="button">Confirmar Compra</button>
+          </form>
+      </div>
+  </div>
+
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          document.getElementById("Comprafinalizada").addEventListener("click", function() {
+              var name = document.getElementById("name").value;
+              var cpf = document.getElementById("cpf").value;
+              var address = document.getElementById("address").value;
+              
+              if (name !== "" && cpf !== "" && address !== "") {
+                  alert("Compra confirmada");
+              } else {
+                  alert("Por favor, preencha todos os campos.");
+              }
+          });
+      });
+  </script>
+
+
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <h3 class="movie-title-medium movie-title">Luquinha Games Academy</h3>
+        <ul class="list-container">
+          <li class="footer-item">
+            <a href="https://pt-br.facebook.com/" target="_blank">
+              <img src="images/icon-facebook.svg" alt="Facebook logo">
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="https://open.spotify.com/" target="_blank">
+              <img src="images/icon-spotify.svg" alt="Spotify logo">
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.youtube.com/" target="_blank">
+              <img src="images/icon-youtube.svg" alt="Youtube logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+

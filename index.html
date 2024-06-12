@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="sobre.css">
+    <link rel="shortcut icon" href="images/background-image.png" type="images/png">
+
+    <title>Luquinha Games Academy | Home</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="main-nav container">
+        <ul class="header-list-container list-container">
+          <li class="nav-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="loja.html">Loja</a>
+          </li>
+          <li class="nav-item">
+            <a href="sobre.html">Sobre</a>
+          </li>
+        </ul>
+      </nav>
+      <hr>
+      <h1 class="movie-title-large movie-title">Luquinha Games Academy</h1>
+     
+    </header>
+
+    <main class="main-section">
+      <div class="container">
+        <h2 class="section-title">LogIn</h2>
+        <ul>
+
+        <div class="containerlogin">
+    
+          <div class="log">
+              <label for="username">Usuário</label>
+              <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+          </div>
+          <div class="log">
+              <label for="password">Senha</label>
+              <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+          </div>
+          <button class="btn" id="loginBtn">Entrar</button>
+      </div>
+  
+      <script>
+
+          document.getElementById("loginBtn").addEventListener("click", function() {
+              var username = document.getElementById("username").value;
+              var password = document.getElementById("password").value;
+  
+              if (username === "adm" && password === "adm123") {
+                  alert("Login bem-sucedido!");
+                  
+                  alert("Usuário ou senha incorretos. Tente novamente.");
+              }
+          })
+
+
+
+      </script>
+  
+        </ul>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container main-footer-container">
+        <h3 class="movie-title movie-title-medium">Luquinha Games Academy</h3>
+        <ul class="list-container">
+          <li class="footer-item">
+            <a href="https://www.facebook.com" target="_blank">
+              <img src="images/icon-facebook.svg" alt="Facebook logo">
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.spotify.com/br" target="_blank">
+              <img src="images/icon-spotify.svg" alt="Spotify logo">
+            </a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.youtube.com" target="_blank">
+              <img src="images/icon-youtube.svg" alt="Youtube logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
